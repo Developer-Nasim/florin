@@ -265,34 +265,31 @@ li {
 .sidebar-menu {
   position: fixed;
   top: 0;
-  left: -250px;
-  width: 250px;
+  left: -350px;
+  width: 280px;
   height: 100%;
-  background: #333;
+  background: #FAF2EB;
   color: #fff;
   transition: left 0.3s ease;
   z-index: 1000;
 }
-
+.sidebar-menu .header-action ul button {
+  filter: invert(1);
+}
 .sidebar-menu-inner {
   padding: 20px;
 }
 
 .sidebar-menu .close-btn {
-  font-size: 30px;
-  color: #fff;
+  font-size: 36px;
+  color: red;
   text-decoration: none;
-  margin-bottom: 40px;
-  width: 35px;
-  height: 35px;
-  background: red;
-  display: flex
-;
-  align-items: center;
-  justify-content: center;
-  border-radius: 3px;
 }
-
+.head-actions {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
 .sidebar-menu ul {
   list-style: none;
   padding: 0;
@@ -305,12 +302,16 @@ li {
 .sidebar-menu ul li {
   margin-bottom: 15px;
 }
-
-.sidebar-menu ul li a {
-  color: #fff;
+.sidebar-menu ul .dropdown li{
+  margin: 0;
+}
+.sidebar-menu ul li a,.sidebar-menu ul .dropdown li a {
+  color: #1b1b1b;
   text-decoration: none;
 }
-
+.sidebar-menu ul > li > a img {
+  filter: invert(1);
+}
 .sidebar-menu.active {
   left: 0;
 }
@@ -328,21 +329,24 @@ li {
 .sidebar-menu ul .dropdown {
   display: none;
   list-style: none;
-  padding-left: 20px;
+  padding-left: 10px;
+  margin-top: 5px;
 }
 
 .sidebar-menu ul li:hover .dropdown {
   display: block;
 }
-
+.sidebar-menu-inner > ul > li > a{
+  font-weight: 600;
+}
 .sidebar-menu ul .dropdown li {
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .sidebar-menu ul .dropdown li a {
-  color: #fff;
+  /* color: #fff; */
   text-decoration: none;
-  font-size: 16px;
+  /* font-size: 16px; */
 } 
 .menu-overlay {
   position: fixed;
@@ -358,7 +362,34 @@ li {
 .sidebar-menu.active + .menu-overlay {
   display: block;
 } 
+.sidebar-menu-inner > form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding: 5px;
+}
 
+.sidebar-menu-inner > form input {
+  display: block;
+  padding: 2px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 88%;
+}
+
+.sidebar-menu-inner > form button {
+  min-width: 26px;
+  filter: invert(1);
+}
+
+.head-actions .header-action ul button span {
+  color: #1b1b1b;
+}
 
 
 
