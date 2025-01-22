@@ -1,0 +1,753 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Site Title Here</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta content="This is a awesome website" name="description" />
+        <meta content="This is a awesome website" property="twitter:description" />
+        <meta content="This is a awesome website" property="og:description" />
+        <meta content="Add title or heading" property="og:title" />
+        <meta content="Add title or heading " property="twitter:title" />
+        <meta property="og:type" content="website" />
+        <meta content="summary_large_image" name="twitter:card" />
+        <meta content="assets/img/seothumb.png" property="og:image" />
+        <meta content="assets/img/seothumb.png" property="twitter:image" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">   
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <style>
+            /* ...existing code... */
+.sidebar-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar-menu-inner {
+    padding: 20px;
+}
+
+.sidebar-menu .close-btn {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar-menu ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar-menu.active {
+    left: 0;
+}
+
+.bar-icon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar-icon span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: #333;
+    margin: 5px 0;
+}
+/* ...existing code... */
+.sidebar-menu ul .dropdown {
+    display: none;
+    list-style: none;
+    padding-left: 20px;
+}
+
+.sidebar-menu ul li:hover .dropdown {
+    display: block;
+}
+
+.sidebar-menu ul .dropdown li {
+    margin-bottom: 10px;
+}
+
+.sidebar-menu ul .dropdown li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+/* ...existing code... */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+}
+
+.sidebar-menu.active + .menu-overlay {
+    display: block;
+}
+/* ...existing code... */
+        </style>
+    </head>
+    <body>
+
+       
+    <!-- header-area START -->
+    <div class="header-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2 col-6">
+                    <div class="logo-area">
+                        <a href="index.html"><img src="assets/img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 d-none d-lg-block text-center">
+                    <div class="menu-area">
+                        <nav>
+                            <ul id="nav">
+                                <li><a href="#">About Me</a>
+                                    <div class="mega-menu">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <ul>
+                                                        <li><a href="#">About Me</a></li>
+                                                        <li><a href="#">About Me</a></li>
+                                                        <li><a href="#">About Me</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul>
+                                                        <li><a href="#">About Me</a></li>
+                                                        <li><a href="#">About Me</a></li>
+                                                        <li><a href="#">About Me</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul>
+                                                        <li><a href="#">About Me</a></li>
+                                                        <li><a href="#">About Me</a></li>
+                                                        <li><a href="#">About Me</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <ul>
+                                                        <li><a href="#">About Me</a></li>
+                                                        <li><a href="#">About Me</a></li>
+                                                        <li><a href="#">About Me</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">Services</a></li> 
+                                <li><a href="#">Portfolio</a></li> 
+                                <li><a href="#">Testimonials</a></li> 
+                                <li><a href="#">Contact Us</a></li>    
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-lg-2 d-none d-lg-block text-end">
+                    <div class="header-action">
+                        <ul>
+                            <li>
+                                <button type="button"><img src="assets/img/user-square.png" alt=""></button>
+                            </li>
+                            <li>
+                                <button type="button"><img src="assets/img/search.png" alt=""></button>
+                            </li>
+                            <li>
+                                <button type="button"><img src="assets/img/shoping.png" alt=""> <span>0</span> </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 d-block d-lg-none text-center">
+                    <div class="bar">
+                        <a class="bar-icon siteBar-btn" href="#">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- ...existing code... -->
+<div class="sidebar-menu">
+    <div class="sidebar-menu-inner">
+        <a href="#" class="close-btn">&times;</a>
+        <ul>
+            <li><a href="#">About Me</a>
+                <ul class="dropdown">
+                    <li><a href="#">Sub Item 1</a></li>
+                    <li><a href="#">Sub Item 2</a></li>
+                    <li><a href="#">Sub Item 3</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </div>
+</div><div class="menu-overlay"></div>
+
+<!-- ...existing code... -->
+        <!-- mobile-menu START -->
+        <div class="mobile-menu d-none">
+            <a href="#" class="logo"><img src="assets/img/logo.png" alt=""></a>
+            <a href="#" class="bars siteBar-btn"><svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"/>
+            </svg></a> 
+            <nav> 
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Services</a></li> 
+                    <li><a href="#">Portfolio</a></li> 
+                    <li><a href="#">Testimonials</a></li> 
+                    <li><a href="#">Contact Us</a></li>  
+                </ul>
+            </nav> 
+        </div> 
+        <div class="menu_overlay"></div>
+    <!-- header-area END -->
+     
+    
+
+    <!-- main START -->
+     <main>
+
+        <!-- hero-section STARTED -->
+         <section class="hero-area owl-carousel">
+            <div class="hero-items">
+                <img src="assets/img/hero.png" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hero-wrap">
+                                <div>
+                                    <h2>Commencez l’année avec style</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
+                                </div>
+                                <a href="#" class="theme-btn">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="hero-items">
+                <img src="assets/img/hero.png" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hero-wrap">
+                                <div>
+                                    <h2>Commencez l’année avec style</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
+                                </div>
+                                <a href="#" class="theme-btn">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="hero-items">
+                <img src="assets/img/hero.png" alt="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="hero-wrap">
+                                <div>
+                                    <h2>Commencez l’année avec style</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi.</p>
+                                </div>
+                                <a href="#" class="theme-btn">Shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+         </section>
+        <!-- hero-section END -->
+
+        <!-- essential-section START -->
+         <section class="basic-essential">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="block-title">
+                            <h3>Basic Essentials</h3>
+                            <ul class="nav " role="tablist">
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Sacs</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Accesoires</button>
+                                </li> 
+                            </ul>
+                        </div>
+                        <div class="middle-wrap">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                    <div class="all_essentials owl-carousel">
+                                        <div class="single-product">
+                                            <div class="product-imgs">
+                                                <img src="assets/img/image.png" alt="">
+                                                <img src="assets/img/image2.png" alt="">
+                                            </div>
+                                            <div class="product-details">
+                                                <p><a href="#">Sac à main double compartiment </a></p>
+                                                <p><span>ZAC</span></p>
+                                                <h5>$59.99</h5>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-imgs">
+                                                <img src="assets/img/image.png" alt="">
+                                                <img src="assets/img/image2.png" alt="">
+                                            </div>
+                                            <div class="product-details">
+                                                <p><a href="#">Sac à main double compartiment </a></p>
+                                                <p><span>ZAC</span></p>
+                                                <h5>$59.99</h5>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-imgs">
+                                                <img src="assets/img/image.png" alt="">
+                                                <img src="assets/img/image2.png" alt="">
+                                            </div>
+                                            <div class="product-details">
+                                                <p><a href="#">Sac à main double compartiment </a></p>
+                                                <p><span>ZAC</span></p>
+                                                <h5>$59.99</h5>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-imgs">
+                                                <img src="assets/img/image.png" alt="">
+                                                <img src="assets/img/image2.png" alt="">
+                                            </div>
+                                            <div class="product-details">
+                                                <p><a href="#">Sac à main double compartiment </a></p>
+                                                <p><span>ZAC</span></p>
+                                                <h5>$59.99</h5>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-imgs">
+                                                <img src="assets/img/image.png" alt="">
+                                                <img src="assets/img/image2.png" alt="">
+                                            </div>
+                                            <div class="product-details">
+                                                <p><a href="#">Sac à main double compartiment </a></p>
+                                                <p><span>ZAC</span></p>
+                                                <h5>$59.99</h5>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-imgs">
+                                                <img src="assets/img/image.png" alt="">
+                                                <img src="assets/img/image2.png" alt="">
+                                            </div>
+                                            <div class="product-details">
+                                                <p><a href="#">Sac à main double compartiment </a></p>
+                                                <p><span>ZAC</span></p>
+                                                <h5>$59.99</h5>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-imgs">
+                                                <img src="assets/img/image.png" alt="">
+                                                <img src="assets/img/image2.png" alt="">
+                                            </div>
+                                            <div class="product-details">
+                                                <p><a href="#">Sac à main double compartiment </a></p>
+                                                <p><span>ZAC</span></p>
+                                                <h5>$59.99</h5>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-imgs">
+                                                <img src="assets/img/image.png" alt="">
+                                                <img src="assets/img/image2.png" alt="">
+                                            </div>
+                                            <div class="product-details">
+                                                <p><a href="#">Sac à main double compartiment </a></p>
+                                                <p><span>ZAC</span></p>
+                                                <h5>$59.99</h5>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-imgs">
+                                                <img src="assets/img/image.png" alt="">
+                                                <img src="assets/img/image2.png" alt="">
+                                            </div>
+                                            <div class="product-details">
+                                                <p><a href="#">Sac à main double compartiment </a></p>
+                                                <p><span>ZAC</span></p>
+                                                <h5>$59.99</h5>
+                                            </div>
+                                        </div>
+                                        <div class="single-product">
+                                            <div class="product-imgs">
+                                                <img src="assets/img/image.png" alt="">
+                                                <img src="assets/img/image2.png" alt="">
+                                            </div>
+                                            <div class="product-details">
+                                                <p><a href="#">Sac à main double compartiment </a></p>
+                                                <p><span>ZAC</span></p>
+                                                <h5>$59.99</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">...</div> 
+                            </div> 
+                        </div>
+                        <div class="bottom-wrap">
+                            <a href="#" class="theme-btn inactive">Voir tout nos sacs</a>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+         </section>
+        <!-- essential-section END -->
+
+
+        <!-- features-section STARTED  -->
+         <section class="feature-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="feature-blk">
+                            <div class="fIcon"><img src="assets/img/icon3.png" alt=""></div>
+                            <h4>30 jours pour les retours</h4>
+                            <p>Satisfait·e ou remboursé·e. Retournez vos achats en ligne dans un délai de 30 jours.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-blk">
+                            <div class="fIcon"><img src="assets/img/icon2.png" alt=""></div>
+                            <h4>Confiance assurée</h4>
+                            <p>Nos produits sont conçus pour durer. Profitez d’une garantie de qualité sur tous vos achats.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="feature-blk">
+                            <div class="fIcon"><img src="assets/img/icon4.png" alt=""></div>
+                            <h4>Livraison gratuite</h4>
+                            <p>Recevez votre commande sans frais dès 75$ d’achat, partout au Canada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- features-section END -->
+
+        <!-- categorie section STARTED -->
+         <section class="categorie-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="heading">
+                            <h3>Nos catégories</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-product">
+                            <div class="product-imgs">
+                                <img src="assets/img/img.png" alt="">
+                                <img src="assets/img/img.png" alt="">
+                            </div>
+                            <div class="product-details"> 
+                                <h4><a href="#">Sacs <img src="assets/img/arrow-right.png" alt=""></a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-product">
+                            <div class="product-imgs">
+                                <img src="assets/img/img2.png" alt="">
+                                <img src="assets/img/img2.png" alt="">
+                            </div>
+                            <div class="product-details"> 
+                                <h4><a href="#">Portefeuilles <img src="assets/img/arrow-right.png" alt=""></a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-product">
+                            <div class="product-imgs">
+                                <img src="assets/img/img3.png" alt="">
+                                <img src="assets/img/img3.png" alt="">
+                            </div>
+                            <div class="product-details"> 
+                                <h4><a href="#">Voyage <img src="assets/img/arrow-right.png" alt=""></a></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- categorie section END -->
+
+        <!-- solds section STARTED -->
+         <section class="solds-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="block-title">
+                            <h3>Nos soldes</h3>
+                            <a href="#" class="more">View All</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-product">
+                            <div class="product-imgs">
+                                <span>-30%</span>
+                                <img src="assets/img/image.png" alt="">
+                                <img src="assets/img/image2.png" alt="">
+                            </div>
+                            <div class="product-details">
+                                <p><a href="#">Sac à main double compartiment </a></p>
+                                <p><span>ZAC</span></p>
+                                <h5>$59.99</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-product">
+                            <div class="product-imgs">
+                                <span>-30%</span>
+                                <img src="assets/img/image.png" alt="">
+                                <img src="assets/img/image2.png" alt="">
+                            </div>
+                            <div class="product-details">
+                                <p><a href="#">Sac à main double compartiment </a></p>
+                                <p><span>ZAC</span></p>
+                                <h5>$59.99</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-product">
+                            <div class="product-imgs">
+                                <span>-30%</span>
+                                <img src="assets/img/image.png" alt="">
+                                <img src="assets/img/image2.png" alt="">
+                            </div>
+                            <div class="product-details">
+                                <p><a href="#">Sac à main double compartiment </a></p>
+                                <p><span>ZAC</span></p>
+                                <h5>$59.99</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="single-product">
+                            <div class="product-imgs">
+                                <span>-30%</span>
+                                <img src="assets/img/image.png" alt="">
+                                <img src="assets/img/image2.png" alt="">
+                            </div>
+                            <div class="product-details">
+                                <p><a href="#">Sac à main double compartiment </a></p>
+                                <p><span>ZAC</span></p>
+                                <h5>$59.99</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- solds section END -->
+
+         <!-- testimonial section START -->
+          <section class="testimonial-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="all-testimonials owl-carousel"> 
+                            <div class="testimonial-block">
+                                <div class="testimonial-content">
+                                    <img src="assets/img/icon5.png" alt="">
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.</h4>
+                                    <p><b>Olivia Franklin</b></p>
+                                </div>
+                                <img src="assets/img/testimonial.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+         <!-- testimonial section END -->
+ 
+
+
+     </main>
+    <!-- main END -->
+
+
+    <!-- footer STARTED -->
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-widget">
+                        <a href="#" class="logo"><img src="assets/img/logo.png" alt=""></a>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.</p>
+                        <form class="ctaForm">
+                            <input type="text" placeholder="Email Address">
+                            <button type="button" class="theme-btn">subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-3">
+                    <div class="footer-widgets">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h5>Navigation</h5>
+                                <ul>
+                                    <li><a href="#">Panier</a></li>
+                                    <li><a href="#">Liste de souhaits </a></li>
+                                    <li><a href="#">Mon compte</a></li>
+                                    <li><a href="#">Livraison</a></li>
+                                    <li><a href="#">FAQ</a></li> 
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <h5>Florin</h5>
+                                <ul>
+                                    <li><a href="#">à props</a></li>
+                                    <li><a href="#">Nous contacter</a></li>
+                                    <li><a href="#">Nos boutiques</a></li>
+                                </ul>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-bottom">
+                        <ul class="tos-menus">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookies Settings</a></li>
+                        </ul>
+                        <ul class="social">
+                            <li><a href="#"><img src="assets/img/instagram.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/twitter.png" alt=""></a></li>
+                            <li><a href="#"><img src="assets/img/youtube.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- footer END -->
+
+
+
+		<!-- JS here --> 
+        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script> 
+        <script src="assets/js/main.js"></script> 
+<!-- ...existing code... -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var sidebarMenu = document.querySelector('.sidebar-menu');
+        var siteBarBtn = document.querySelector('.siteBar-btn');
+        var closeBtn = document.querySelector('.sidebar-menu .close-btn');
+        var menuOverlay = document.querySelector('.menu-overlay');
+
+        siteBarBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            sidebarMenu.classList.toggle('active');
+            menuOverlay.style.display = sidebarMenu.classList.contains('active') ? 'block' : 'none';
+        });
+
+        closeBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            sidebarMenu.classList.remove('active');
+            menuOverlay.style.display = 'none';
+        });
+
+        menuOverlay.addEventListener('click', function() {
+            sidebarMenu.classList.remove('active');
+            menuOverlay.style.display = 'none';
+        });
+    });
+</script>
+<!-- ...existing code... -->
+        <script>
+
+            window.addEventListener('load', () => {
+                function AlignMents() {
+                    
+                    const container = document.querySelector('.container')
+                    const dots = document.querySelector('.owl-dots')
+                    const essentialOverlay = document.querySelector('.overlay')
+                    const allItems = document.querySelector('.all_essentials')
+                    const shouldMargin = container.offsetLeft + 15
+
+                    // margin left for owl dots
+                    dots.style.left = shouldMargin + "px"
+                    essentialOverlay.style.width = "calc(100% - "+(shouldMargin - 60)+"px)"
+                    allItems.style.maxWidth = "calc(100% - "+shouldMargin+"px)"
+
+
+
+
+
+
+
+                 
+                }
+                AlignMents()
+                window.addEventListener('change', () => {
+                    AlignMents()
+
+                })
+            })
+
+        </script>
+    </body>
+</html>
