@@ -282,23 +282,33 @@ li {
   font-size: 30px;
   color: #fff;
   text-decoration: none;
-  display: block;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  width: 35px;
+  height: 35px;
+  background: red;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
 }
 
 .sidebar-menu ul {
   list-style: none;
   padding: 0;
 }
-
+.sidebar-menu ul > li > a{
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+} 
 .sidebar-menu ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .sidebar-menu ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
 }
 
 .sidebar-menu.active {
@@ -309,14 +319,12 @@ li {
   display: inline-block;
   cursor: pointer;
 }
-
-.bar-icon span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  background: #333;
-  margin: 5px 0;
-} 
+.bar-icon svg {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+ 
 .sidebar-menu ul .dropdown {
   display: none;
   list-style: none;
@@ -468,14 +476,19 @@ section.basic-essential {
   margin-top: -80px;
 }
 
-section.basic-essential .overlay { 
+section.basic-essential .overlay {
   position: absolute;
   top: 0;
-  right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   height: 100%;
   background: #FAF2EB;
   z-index: -1;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 section.basic-essential .block-title {
@@ -557,19 +570,12 @@ section.basic-essential .block-title {
 .single-product:hover .product-imgs img:last-child,.product-imgs:hover img:last-child {
   opacity: 1;
 }
-
 .product-details {
   padding-top: 16px;
+  display: block;
 }
-div#pills-tabContent {
-  min-height: 460px;
-}
-
-div#pills-tabContent .all_essentials {
-  position: absolute;
-  width: 100%;
-  right: 0;
-}
+ 
+ 
 .product-details p {
   font-size: 18px;
   line-height: 1.4;
@@ -591,9 +597,13 @@ div#pills-tabContent .all_essentials {
   display: block;  
 }
 .all_essentials .owl-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: absolute;
   top: 40%;
-  right: 20px;
+  left: 0px;
   z-index: 9;
   transform: translateY(-50%);
 }
@@ -604,11 +614,9 @@ div#pills-tabContent .all_essentials {
 .bottom-wrap a.theme-btn:hover {
   background: #bba18a;
 }
-.all_essentials .owl-nav .owl-prev {
-  display: none;
-}
+ 
 
-.all_essentials .owl-nav .owl-next {
+.all_essentials .owl-nav > div {
   background: #1b1b1ba1;
   width: 48px;
   height: 48px;
@@ -616,14 +624,21 @@ div#pills-tabContent .all_essentials {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  margin-right: -70px;
   transition: .2s;
 }
 
-.all_essentials .owl-nav .owl-next:hover {
+.all_essentials .owl-nav  > div:hover {
   background: #1b1b1b;
 }
-
-
+.all_essentials .owl-nav > .owl-prev {
+  margin-left: -70px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+} 
 
 
 
@@ -683,6 +698,10 @@ section.feature-area {
 
 
 
+section.categorie-area .product-imgs img:last-child {
+  position: unset;
+  opacity: 1;
+}
 .heading h3 {
   text-align: center;
   margin-bottom: 40px;
@@ -701,6 +720,13 @@ section.feature-area {
   filter: invert(1);
 }
 
+section.categorie-area .single-product:hover .product-imgs img:last-child {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
 
 
 

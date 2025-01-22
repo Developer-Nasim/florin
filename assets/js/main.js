@@ -33,13 +33,13 @@
         const container = document.querySelector('.container')
         const dots = document.querySelector('.owl-dots')
         const essentialOverlay = document.querySelector('.overlay')
-        const allItems = document.querySelector('.all_essentials')
+        // const allItems = document.querySelector('.all_essentials')
         const shouldMargin = container.offsetLeft + 15
 
         // margin left for owl dots
         dots.style.left = shouldMargin + "px"
-        essentialOverlay.style.width = "calc(100% - "+(shouldMargin - 60)+"px)"
-        allItems.style.maxWidth = "calc(100% - "+shouldMargin+"px)"
+        essentialOverlay.style.width = "calc(100% - "+(shouldMargin + shouldMargin - 100)+"px)"
+        // allItems.style.maxWidth = "calc(100% - "+shouldMargin+"px)"
 
 
 
@@ -97,7 +97,7 @@
     margin: 25,
     autoplay: true,
     smartSpeed: 500,
-    items: 6,
+    items: 4,
     navText: [
       '<img src="assets/img/arrow-right.png" alt="">',
       '<img src="assets/img/arrow-right.png" alt="">'
@@ -107,13 +107,13 @@
     dots: false,
     responsive: {
       0: {
-        items: 2
+        items: 1
       },
       767: {
-        items: 4
+        items: 3
       },
       992: {
-        items: 6
+        items: 4
       }
     }
   });

@@ -14,6 +14,25 @@
  
 /* Tablet screen :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+    .header-area{
+        padding: 20px 0;
+    }
+    .feature-blk { 
+        margin-bottom: 60px;
+    }
+    section.solds-area{
+        padding-bottom: 0px;
+    }
+    .testimonial-content h4 {
+        font-size: 20px; 
+        margin: 30px 0;
+    }
+    .all_essentials .owl-nav > div{
+        margin-right: -10px;
+    }
+    .all_essentials .owl-nav > .owl-prev{
+        margin-left: -10px;
+    }
 
 
 }
@@ -21,6 +40,111 @@
  
 /* small screen :320px. */
 @media (max-width: 767px) {
+    body{
+        font-size: 14px;
+    }
+    .header-area{
+        padding: 15px 0;
+    }
+    .logo-area a { 
+        max-width: 95px;
+    }
+    .feature-blk { 
+        margin-bottom: 60px;
+    }
+    section.solds-area{
+        padding-bottom: 0px;
+    }
+    .testimonial-content h4 {
+        font-size: 20px; 
+        margin: 30px 0;
+    }
+    .hero-items {
+        position: relative;
+        min-height: 400px;
+        height: calc(100vh - 70px); 
+    }
+    .hero-wrap{
+        flex-wrap: wrap;
+    }
+    .hero-wrap h2 {
+        font-size: 29px; 
+        margin-bottom: 15px;
+    }
+    .hero-wrap p {
+        font-size: 15px; 
+    }
+    a.theme-btn, .theme-btn { 
+        padding: 10px 22px; 
+        border-radius: 6px; 
+    }
+    .block-title h3 {
+        font-size: 22px; 
+    }
+
+    .all_essentials .owl-nav > div{
+        margin-right: -10px;
+    }
+    .all_essentials .owl-nav > .owl-prev{
+        margin-left: -10px;
+    }
+    .all_essentials {
+        padding: 0 30px;
+    }
+    .feature-blk h4 {
+        font-size: 18px; 
+    }
+    .feature-blk p {
+        font-size: 15px; 
+    }
+    section.feature-area{
+        padding-bottom: 50px;
+    }
+    .testimonial-block > img{
+        display: none !important;
+    }
+
+    .testimonial-block > div{
+        width: 100%;
+    }
+    .testimonial-content {
+        padding: 46px 38px;
+    }
+    footer {
+        padding: 60px 0px 40px 0; 
+    }
+    .footer-widgets h5 { 
+        margin-bottom: 15px;
+    }
+    .footer-widgets ul { 
+        gap: 5px;
+    }
+    .footer-widget a.logo { 
+        max-width: 150px;
+        margin-bottom: 15px;
+    }
+    .footer-widget p {
+        font-size: 14px; 
+    }
+    form.ctaForm { 
+        padding: 8px;
+        border-radius: 8px;
+        margin-bottom: 40px;
+    }
+    .footer-bottom {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    ul.tos-menus {
+        gap: 14px;
+        margin-bottom: 15px;
+    }
+    
+    ul.social {
+        gap: 10px;
+    }
+
 
  
 }
