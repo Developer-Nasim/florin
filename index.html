@@ -19,104 +19,12 @@
 
         
 		<!-- CSS here -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">   
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
-        <style>
-            /* ...existing code... */
-.sidebar-menu {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background: #333;
-    color: #fff;
-    transition: left 0.3s ease;
-    z-index: 1000;
-}
-
-.sidebar-menu-inner {
-    padding: 20px;
-}
-
-.sidebar-menu .close-btn {
-    font-size: 30px;
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 20px;
-}
-
-.sidebar-menu ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar-menu ul li {
-    margin-bottom: 10px;
-}
-
-.sidebar-menu ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-.sidebar-menu.active {
-    left: 0;
-}
-
-.bar-icon {
-    display: inline-block;
-    cursor: pointer;
-}
-
-.bar-icon span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: #333;
-    margin: 5px 0;
-}
-/* ...existing code... */
-.sidebar-menu ul .dropdown {
-    display: none;
-    list-style: none;
-    padding-left: 20px;
-}
-
-.sidebar-menu ul li:hover .dropdown {
-    display: block;
-}
-
-.sidebar-menu ul .dropdown li {
-    margin-bottom: 10px;
-}
-
-.sidebar-menu ul .dropdown li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-}
-/* ...existing code... */
-.menu-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    display: none;
-}
-
-.sidebar-menu.active + .menu-overlay {
-    display: block;
-}
-/* ...existing code... */
-        </style>
+ 
     </head>
     <body>
 
@@ -134,46 +42,145 @@
                     <div class="menu-area">
                         <nav>
                             <ul id="nav">
-                                <li><a href="#">About Me</a>
+                                <li><a href="#">Nouveautés</a></li>
+                                <li><a href="#">Sacs <img src="assets/img/arrow-down.png" alt=""></a>
                                     <div class="mega-menu">
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-lg-3">
-                                                    <ul>
-                                                        <li><a href="#">About Me</a></li>
-                                                        <li><a href="#">About Me</a></li>
-                                                        <li><a href="#">About Me</a></li>
-                                                    </ul>
-                                                </div>
+                                                    <div class="dropdown-menu-blk">
+                                                        <h4>SACS ET SACS à MAIN</h4>
+                                                        <ul>
+                                                            <li><a href="#">Fourre-tout</a></li> 
+                                                            <li><a href="#">Petits sacs à main</a></li> 
+                                                            <li><a href="#">Sacs à dos</a></li> 
+                                                            <li><a href="#">Sacs à main</a></li> 
+                                                            <li><a href="#">Sacs convertibles</a></li> 
+                                                            <li><a href="#">Sacs unisexs</a></li> 
+                                                        </ul> 
+                                                    </div>
+                                                </div> 
                                                 <div class="col-lg-3">
-                                                    <ul>
-                                                        <li><a href="#">About Me</a></li>
-                                                        <li><a href="#">About Me</a></li>
-                                                        <li><a href="#">About Me</a></li>
-                                                    </ul>
-                                                </div>
+                                                    <div class="dropdown-menu-blk">
+                                                        <h4>SAC à DOS</h4>
+                                                        <ul>
+                                                            <li><a href="#">Sacs d’écoles</a></li> 
+                                                            <li><a href="#">Petits sacs à dos</a></li> 
+                                                            <li><a href="#">Sacs de sport</a></li>  
+                                                        </ul> 
+                                                    </div>
+                                                </div> 
                                                 <div class="col-lg-3">
-                                                    <ul>
-                                                        <li><a href="#">About Me</a></li>
-                                                        <li><a href="#">About Me</a></li>
-                                                        <li><a href="#">About Me</a></li>
-                                                    </ul>
-                                                </div>
+                                                    <div class="dropdown-menu-blk">
+                                                        <h4><a href="#">sacs de taille</a></h4>
+                                                        <h4><a href="#">Sacs en cuire</a></h4>
+                                                        <h4><a href="#">porte-documents</a></h4>
+                                                    </div>
+                                                </div> 
                                                 <div class="col-lg-3">
-                                                    <ul>
-                                                        <li><a href="#">About Me</a></li>
-                                                        <li><a href="#">About Me</a></li>
-                                                        <li><a href="#">About Me</a></li>
-                                                    </ul>
-                                                </div>
+                                                    <div class="dropdown-menu-blk">
+                                                        <div class="photo-blk">
+                                                            <img src="assets/img/image3.png" alt="">
+                                                            <button type="button" class="theme-btn">shop now</button>
+                                                        </div>
+                                                    </div>
+                                                </div> 
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li><a href="#">Services</a></li> 
-                                <li><a href="#">Portfolio</a></li> 
-                                <li><a href="#">Testimonials</a></li> 
-                                <li><a href="#">Contact Us</a></li>    
+                                <li><a href="#">Portefeuilles <img src="assets/img/arrow-down.png" alt=""></a>
+                                    <div class="mega-menu">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="dropdown-menu-blk">
+                                                        <h4>SACS ET SACS à MAIN</h4>
+                                                        <ul>
+                                                            <li><a href="#">Fourre-tout</a></li> 
+                                                            <li><a href="#">Petits sacs à main</a></li> 
+                                                            <li><a href="#">Sacs à dos</a></li> 
+                                                            <li><a href="#">Sacs à main</a></li> 
+                                                            <li><a href="#">Sacs convertibles</a></li> 
+                                                            <li><a href="#">Sacs unisexs</a></li> 
+                                                        </ul> 
+                                                    </div>
+                                                </div> 
+                                                <div class="col-lg-3">
+                                                    <div class="dropdown-menu-blk">
+                                                        <h4>SAC à DOS</h4>
+                                                        <ul>
+                                                            <li><a href="#">Sacs d’écoles</a></li> 
+                                                            <li><a href="#">Petits sacs à dos</a></li> 
+                                                            <li><a href="#">Sacs de sport</a></li>  
+                                                        </ul> 
+                                                    </div>
+                                                </div> 
+                                                <div class="col-lg-3">
+                                                    <div class="dropdown-menu-blk">
+                                                        <h4><a href="#">sacs de taille</a></h4>
+                                                        <h4><a href="#">Sacs en cuire</a></h4>
+                                                        <h4><a href="#">porte-documents</a></h4>
+                                                    </div>
+                                                </div> 
+                                                <div class="col-lg-3">
+                                                    <div class="dropdown-menu-blk">
+                                                        <div class="photo-blk">
+                                                            <img src="assets/img/image3.png" alt="">
+                                                            <button type="button" class="theme-btn">shop now</button>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">Soldes  <img src="assets/img/arrow-down.png" alt=""></a>
+                                    <div class="mega-menu">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="dropdown-menu-blk">
+                                                        <h4>SACS ET SACS à MAIN</h4>
+                                                        <ul>
+                                                            <li><a href="#">Fourre-tout</a></li> 
+                                                            <li><a href="#">Petits sacs à main</a></li> 
+                                                            <li><a href="#">Sacs à dos</a></li> 
+                                                            <li><a href="#">Sacs à main</a></li> 
+                                                            <li><a href="#">Sacs convertibles</a></li> 
+                                                            <li><a href="#">Sacs unisexs</a></li> 
+                                                        </ul> 
+                                                    </div>
+                                                </div> 
+                                                <div class="col-lg-3">
+                                                    <div class="dropdown-menu-blk">
+                                                        <h4>SAC à DOS</h4>
+                                                        <ul>
+                                                            <li><a href="#">Sacs d’écoles</a></li> 
+                                                            <li><a href="#">Petits sacs à dos</a></li> 
+                                                            <li><a href="#">Sacs de sport</a></li>  
+                                                        </ul> 
+                                                    </div>
+                                                </div> 
+                                                <div class="col-lg-3">
+                                                    <div class="dropdown-menu-blk">
+                                                        <h4><a href="#">sacs de taille</a></h4>
+                                                        <h4><a href="#">Sacs en cuire</a></h4>
+                                                        <h4><a href="#">porte-documents</a></h4>
+                                                    </div>
+                                                </div> 
+                                                <div class="col-lg-3">
+                                                    <div class="dropdown-menu-blk">
+                                                        <div class="photo-blk">
+                                                            <img src="assets/img/image3.png" alt="">
+                                                            <button type="button" class="theme-btn">shop now</button>
+                                                        </div>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -202,46 +209,27 @@
                 </div>
             </div>
         </div>
-    </div>
-<!-- ...existing code... -->
-<div class="sidebar-menu">
-    <div class="sidebar-menu-inner">
-        <a href="#" class="close-btn">&times;</a>
-        <ul>
-            <li><a href="#">About Me</a>
-                <ul class="dropdown">
-                    <li><a href="#">Sub Item 1</a></li>
-                    <li><a href="#">Sub Item 2</a></li>
-                    <li><a href="#">Sub Item 3</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-    </div>
-</div><div class="menu-overlay"></div>
-
-<!-- ...existing code... -->
-        <!-- mobile-menu START -->
-        <div class="mobile-menu d-none">
-            <a href="#" class="logo"><img src="assets/img/logo.png" alt=""></a>
-            <a href="#" class="bars siteBar-btn"><svg class="bi bi-x" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M11.854 4.146a.5.5 0 010 .708l-7 7a.5.5 0 01-.708-.708l7-7a.5.5 0 01.708 0z" clip-rule="evenodd"/>
-                <path fill-rule="evenodd" d="M4.146 4.146a.5.5 0 000 .708l7 7a.5.5 0 00.708-.708l-7-7a.5.5 0 00-.708 0z" clip-rule="evenodd"/>
-            </svg></a> 
-            <nav> 
+    </div> 
+        <!-- mobile-menu START --> 
+        <div class="sidebar-menu">
+            <div class="sidebar-menu-inner">
+                <a href="#" class="close-btn">&times;</a>
                 <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Services</a></li> 
-                    <li><a href="#">Portfolio</a></li> 
-                    <li><a href="#">Testimonials</a></li> 
-                    <li><a href="#">Contact Us</a></li>  
+                    <li><a href="#">About Me <img src="assets/img/arrow-down.png" alt=""></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Sub Item 1</a></li>
+                            <li><a href="#">Sub Item 2</a></li>
+                            <li><a href="#">Sub Item 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
-            </nav> 
-        </div> 
-        <div class="menu_overlay"></div>
+            </div>
+        </div>
+        <div class="menu-overlay"></div> 
     <!-- header-area END -->
      
     
@@ -250,7 +238,7 @@
      <main>
 
         <!-- hero-section STARTED -->
-         <section class="hero-area owl-carousel">
+         <section class="hero-area owl-carousel" data-aos="fade-in">
             <div class="hero-items">
                 <img src="assets/img/hero.png" alt="">
                 <div class="container">
@@ -303,7 +291,7 @@
         <!-- hero-section END -->
 
         <!-- essential-section START -->
-         <section class="basic-essential">
+         <section class="basic-essential" data-aos="fade-up">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
@@ -453,21 +441,21 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
-                        <div class="feature-blk">
+                        <div class="feature-blk" data-aos="fade-up">
                             <div class="fIcon"><img src="assets/img/icon3.png" alt=""></div>
                             <h4>30 jours pour les retours</h4>
                             <p>Satisfait·e ou remboursé·e. Retournez vos achats en ligne dans un délai de 30 jours.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="feature-blk">
+                        <div class="feature-blk" data-aos="fade-up" data-aos-delay="200">
                             <div class="fIcon"><img src="assets/img/icon2.png" alt=""></div>
                             <h4>Confiance assurée</h4>
                             <p>Nos produits sont conçus pour durer. Profitez d’une garantie de qualité sur tous vos achats.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
-                        <div class="feature-blk">
+                        <div class="feature-blk" data-aos="fade-up" data-aos-delay="400">
                             <div class="fIcon"><img src="assets/img/icon4.png" alt=""></div>
                             <h4>Livraison gratuite</h4>
                             <p>Recevez votre commande sans frais dès 75$ d’achat, partout au Canada.</p>
@@ -483,12 +471,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="heading">
+                        <div class="heading" data-aos="fade-up">
                             <h3>Nos catégories</h3>
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="single-product">
+                        <div class="single-product" data-aos="fade-in">
                             <div class="product-imgs">
                                 <img src="assets/img/img.png" alt="">
                                 <img src="assets/img/img.png" alt="">
@@ -499,7 +487,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="single-product">
+                        <div class="single-product" data-aos="fade-in" data-aos-delay="200">
                             <div class="product-imgs">
                                 <img src="assets/img/img2.png" alt="">
                                 <img src="assets/img/img2.png" alt="">
@@ -510,7 +498,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="single-product">
+                        <div class="single-product" data-aos="fade-in" data-aos-delay="400">
                             <div class="product-imgs">
                                 <img src="assets/img/img3.png" alt="">
                                 <img src="assets/img/img3.png" alt="">
@@ -530,13 +518,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="block-title">
+                        <div class="block-title" data-aos="fade-up">
                             <h3>Nos soldes</h3>
                             <a href="#" class="more">View All</a>
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="single-product">
+                        <div class="single-product" data-aos="fade-up">
                             <div class="product-imgs">
                                 <span>-30%</span>
                                 <img src="assets/img/image.png" alt="">
@@ -550,7 +538,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="single-product">
+                        <div class="single-product" data-aos="fade-up" data-aos-delay="100">
                             <div class="product-imgs">
                                 <span>-30%</span>
                                 <img src="assets/img/image.png" alt="">
@@ -564,7 +552,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="single-product">
+                        <div class="single-product" data-aos="fade-up" data-aos-delay="200">
                             <div class="product-imgs">
                                 <span>-30%</span>
                                 <img src="assets/img/image.png" alt="">
@@ -578,7 +566,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="single-product">
+                        <div class="single-product" data-aos="fade-up" data-aos-delay="300">
                             <div class="product-imgs">
                                 <span>-30%</span>
                                 <img src="assets/img/image.png" alt="">
@@ -597,7 +585,7 @@
         <!-- solds section END -->
 
          <!-- testimonial section START -->
-          <section class="testimonial-area">
+          <section class="testimonial-area" data-aos="fade-in">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -687,67 +675,9 @@
 
 		<!-- JS here --> 
         <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <script src="assets/js/owl.carousel.min.js"></script> 
-        <script src="assets/js/main.js"></script> 
-<!-- ...existing code... -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var sidebarMenu = document.querySelector('.sidebar-menu');
-        var siteBarBtn = document.querySelector('.siteBar-btn');
-        var closeBtn = document.querySelector('.sidebar-menu .close-btn');
-        var menuOverlay = document.querySelector('.menu-overlay');
-
-        siteBarBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            sidebarMenu.classList.toggle('active');
-            menuOverlay.style.display = sidebarMenu.classList.contains('active') ? 'block' : 'none';
-        });
-
-        closeBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            sidebarMenu.classList.remove('active');
-            menuOverlay.style.display = 'none';
-        });
-
-        menuOverlay.addEventListener('click', function() {
-            sidebarMenu.classList.remove('active');
-            menuOverlay.style.display = 'none';
-        });
-    });
-</script>
-<!-- ...existing code... -->
-        <script>
-
-            window.addEventListener('load', () => {
-                function AlignMents() {
-                    
-                    const container = document.querySelector('.container')
-                    const dots = document.querySelector('.owl-dots')
-                    const essentialOverlay = document.querySelector('.overlay')
-                    const allItems = document.querySelector('.all_essentials')
-                    const shouldMargin = container.offsetLeft + 15
-
-                    // margin left for owl dots
-                    dots.style.left = shouldMargin + "px"
-                    essentialOverlay.style.width = "calc(100% - "+(shouldMargin - 60)+"px)"
-                    allItems.style.maxWidth = "calc(100% - "+shouldMargin+"px)"
-
-
-
-
-
-
-
-                 
-                }
-                AlignMents()
-                window.addEventListener('change', () => {
-                    AlignMents()
-
-                })
-            })
-
-        </script>
+        <script src="assets/js/main.js"></script>   
     </body>
 </html>
